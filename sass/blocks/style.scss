@@ -1,0 +1,14 @@
+@import "../base/mixins";
+@import "../base/variables";
+@import "../blocks/promo";
+@import "../blocks/header";
+@import "../blocks/buttons";
+@import "../blocks/benefits";
+@import "../blocks/consultation";
+@import "../blocks/forms";
+@import "../blocks/carousel";
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
