@@ -24,7 +24,7 @@
             <a href="tel:+74999228974" class="header__phone"
               >+7 (499) 922-89-74</a
             >
-            <button class="button">Заказать звонок</button>
+            <button data-modal="consultation" class="button">Заказать звонок</button>
           </div>
         </header>
         <div class="promo__wrapper">
@@ -44,7 +44,7 @@
               Ответим все вопросы
             </div>
           </div>
-          <button class="button button_main">Заказать Консультацию</button>
+          <button data-modal="consultation" class="button button_main">Заказать Консультацию</button>
           <div class="promo__link">
             или
             <a class="promo__link" href="#">Перейти в каталог</a>
@@ -95,7 +95,7 @@
           Просто заполните форму заявки <br />
           и мы перезвоним вам в течении 10 минут
         </div>
-        <form class="feed-form" action="#">
+        <form id="consultation-form" class="feed-form" action="#">
           <input name="name" required type="text" placeholder="Ваше имя" />
           <input
             name="phone"
@@ -485,9 +485,66 @@
 			</div>
 		</div>
 	</section>
+	<footer class="footer">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.9879113974594!2d37.65317541568101!3d55.776081797664126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a785740da35%3A0x852962afd0c7bfad!2z0JzQvtGB0LrQstCwINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGP!5e0!3m2!1sru!2sru!4v1628600901381!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<div class="footer__info">
+			<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+			<a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
+			<div class="footer__social">
+				<a href="#" class="footer__social-item">
+					<i class="fab fa-facebook-f"></i>
+				<a href="#" class="footer__social-item">
+					<i class="fab fa-instagram"></i>
+				<a href="#" class="footer__social-item">
+					<i class="fab fa-pinterest-p"></i>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+			<form class="feed-form feed-rom_mt25" action="#">
+				<input  name="name" type="text" placeholder="Ваше имя" />
+				<input 
+				  name="phone"
+				  type="number"
+				  placeholder="Ваш телефон"
+				/>
+				<input  name="email" type="email" placeholder="Ваш Е-mail" />
+				<button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+			  </form>
+		</div>
+		<div class="modal" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Ваш заказ:</div>
+			<div class="modal__descr">Пульсометр Polar FT1</div>
+			<form class="feed-form feed-rom_mt25" action="#">
+				<input  name="name" required type="text" placeholder="Ваше имя" />
+				<input 
+				  name="phone"
+				  required
+				  type="number"
+				  placeholder="Ваш телефон"
+				/>
+				<input  name="email" required type="email" placeholder="Ваш Е-mail" />
+				<button class="button button_submit">Купить</button>
+			  </form>
+		</div>
+		<div class="modal modal_mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">
+				Наш менеджер свяжется с вами 
+				в ближайшее время!</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="https://kit.fontawesome.com/532d8739c2.js" crossorigin="anonymous"></script>
+	<script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
