@@ -1,5 +1,10 @@
-@import "../base/mixins";
+*{
+	font-family: 'Museo sans Cyrl', sans-serif;
+}
+
+@import "../base/animations";
 @import "../base/variables";
+@import "../base/mixins";
 @import "../blocks/promo";
 @import "../blocks/header";
 @import "../blocks/buttons";
@@ -11,6 +16,7 @@
 @import "../blocks/reviews";
 @import "../blocks/footer";
 @import "../blocks/modal";
+@import "../blocks/pageup";
 
 .container {
 	position: relative;

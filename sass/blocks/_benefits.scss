@@ -15,6 +15,17 @@
     width: 70px;
     height: 70px;
     margin-bottom: 34px;
+	&_animated{
+		// сокращенная форма
+	//   animation: hearbeat 1.5s ease infinite;
+	  animation-name: hearbeat;
+	  animation-duration: 1.5s;
+	  animation-timing-function: ease;
+	  animation-iteration-count: infinite;
+	  &:hover{
+		  animation-play-state: paused;
+	  }
+	}
   }
   &__blog {
     display: flex;
