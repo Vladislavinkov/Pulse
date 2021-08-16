@@ -1,0 +1,190 @@
+@media screen and (max-width: 1200px) {
+	.container{
+		max-width: 960px;
+	}	
+}
+@media screen and (max-width: 991px) {
+	.container{
+		max-width: 700px;
+	}
+	.header {
+		// &__logo {
+		// 	width: 200px;
+		// }
+	}
+	.promo {
+		&__subheader {
+			font-size: 20px;
+		}
+	}
+	.catalog{
+		.title{
+			text-align: center;
+		}
+		&__content {
+			margin-top: 60px;
+			display: none;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			&_active {
+				display: flex;
+			}
+		}
+			
+	}
+	.carousel {
+		padding: 81px 0;
+		&__inner {
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+			&-image{
+				width: 100%;
+			}
+		}
+		.slick-dots{
+			list-style: none;
+		}
+		
+	}
+}
+// }
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 576px;
+	  }
+	  .promo {
+		min-height: 650px;
+		padding: 21px 0 93px 0;
+		background: url(../../img/section/bg1.png) 0 0/cover no-repeat;
+	  }	
+	  .benefits {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+
+		&__blog {
+			flex: 0 1 100%;
+			margin-right: 0;
+		}
+	}
+
+	.consultation {
+
+		&__title {
+			text-align: center;
+			font-size: 30px;
+
+			&_left {
+			}
+		}
+
+		&__descr {
+			text-align: center;
+			margin-bottom: 25px;
+			font-size: 20px;
+		}
+		.feed-form{
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+	.catalog{
+		&-item{
+			width: 450px;
+		}
+	}
+	.reviews{
+		&__block{
+			flex-direction: column;
+			align-items: center;
+			&-img{
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			&-text{
+				text-align: center;
+				width: 90%;
+			}
+		}
+	}
+	.footer{
+		&__info{
+			padding: 15px 25px 20px 25px;
+			height: 170px;
+			width: 300px;
+			border-radius: 10px;
+		}
+		&__addr{
+			margin-bottom: 25px;
+			font-size: 15px;
+		}
+		&__phone{
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+	}	
+}
+
+@media (max-width: 576px) {
+	.container{
+		width: 90%;
+	}
+	.header{
+		&__official{
+			display: none;
+		}
+		&__phone{
+			font-size: 15px;
+		}
+	}	
+	.promo{
+		&__header{
+			font-size: 30px;
+		}
+		&__subheader{
+			font-size: 15px;
+		}
+		&__icons{
+			margin-top: 35px;
+			justify-content: space-evenly;
+			display: none;
+		}
+		&__text{
+			font-size: 15px;
+		}
+		&__link{
+			display: none;
+		}
+	}
+	.consultation{
+		padding: 70px 0 50px 0;
+		&__title{
+			font-size: 25px;
+		}
+		&__descr{
+			font-size: 15px;
+		}
+	}
+	.catalog{
+		&__tabs{
+			margin-top: 40px;
+		}
+		&__text{
+			font-size: 10px;
+		}
+	}
+	.footer{
+		&__info{
+			display: none;
+		}
+	}
+	.modal{
+		width: 330px;
+		padding: 35px 10px 40px 10px;
+		border-radius: 5px 50px 5px 5px;
+		&__close{
+			right: -20px;
+		}
+	}
+}

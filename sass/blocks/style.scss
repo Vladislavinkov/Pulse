@@ -1,6 +1,11 @@
 *{
 	font-family: 'Museo sans Cyrl', sans-serif;
 }
+.container {
+	position: relative;
+	max-width: 950px;
+	margin: 0 auto;
+}
 
 @import "../base/animations";
 @import "../base/variables";
@@ -17,9 +22,5 @@
 @import "../blocks/footer";
 @import "../blocks/modal";
 @import "../blocks/pageup";
+@import "../blocks/media";
 
-.container {
-	position: relative;
-	max-width: 950px;
-	margin: 0 auto;
-}
